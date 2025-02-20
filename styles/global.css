@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+
+    --color-brand: #CA3884;
+    --color-brand-hover:#A52C6B;
+    --color-danger:#C93847;
+    --content-primary:#080B12;
+    --content-secondary:#374151;
+    --content-tertiary:#9CA3AF;
+    --always-white:#FFFFFF;
+
+    --border-primary:#D1D5DB;
+    --border-hover:#B9C2D0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --font:'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    font: 500 1.4rem/1.6 var(--font);
+}
+h1{
+    font: 700 2.4rem/3.2 var(--font);
+}
+label{
+    font: 600 1.6rem/2 var(--font);
+}
+p{
+    font: 500 1.6rem/2 var(--font);
+}
