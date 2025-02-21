@@ -10,7 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="container">
+        <header class="hide">
+            <img src="assets/logo.svg" alt="Logo">
+        </header>
+        <main>
+            <h1>Compras da semana</h1>
+            <form>
+               <label class="sr-only" for="item">Adicione um novo item</label> 
+               <input id="item" type="text" placeholder="Adicione um novo item" required>
+               <button>Adicionar item</button>
+            </form>
+            <section class="list-wrapper">
+                <ul>
+                    <div class="item">
+                        <div>
+                            <img src="assets/icons/bullet.svg" alt="">
+                            <li>Pão de Forma</li>
+                        </div>
+                        <img src="assets/icons/Frame-3.svg" alt="">
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="assets/icons/bullet.svg" alt="">
+                            <li>Pão de Forma</li>
+                        </div>
+                        <img src="assets/icons/Frame-3.svg" alt="">
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="assets/icons/bullet.svg" alt="">
+                            <li>Pão de Forma</li>
+                        </div>
+                        <img src="assets/icons/Frame-3.svg" alt="">
+                    </div>
+                </ul>
+            </section>
+            <div class="alert">
+                <div>
+                    <img src="assets/icons/warning-circle-filled.svg" alt="sinal de exclamação de alerta">
+                    <p>O item foi removido da lista</p>
+                </div>
+                <img src="assets/icons/delete-small.svg" alt="icone de X">
+            </div>
+        </main>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

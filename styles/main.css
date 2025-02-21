@@ -1,0 +1,88 @@
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        input[type="text"]{
+            background-color: var(--background-secondary);
+            border:2px solid var(--border-primary);
+            border-radius: 1.2rem;
+
+            height: 4.4rem;
+            padding: 0 1.8rem;
+            
+            &:focus{
+                border: 2px solid var(--color-danger);
+                outline: 0;
+            }
+            &::placeholder{
+                color: var(--content-tertiary);
+            }
+        }
+        button{
+            color: var(--always-white);
+            height: 4.4rem;
+            border-radius: 1.2rem;
+            background: var(--color-brand, #CA3884);
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+
+            &:hover{
+                filter: brightness(1.1);
+            }
+        }
+       
+    }
+
+    .list-wrapper{
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                border-radius: 1.2rem;
+                background: var(--background-secondary);
+                height: 5.7rem;
+                padding: 1.2rem;
+
+                &:hover{
+                    border: 2px solid #CA3884;
+                    cursor: pointer;
+                }
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .alert{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem;
+        background-color: var(--color-danger);
+        border-radius: 1.2rem;
+        color: var(--always-white);
+
+        div{
+            display: flex;
+            gap: 1.2rem;
+        }
+    }
+}
