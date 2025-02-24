@@ -28,7 +28,7 @@
     font-family: 'Inter', sans-serif;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 .container{
     width: 39rem;
