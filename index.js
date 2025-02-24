@@ -1,6 +1,8 @@
 const inputText = document.getElementById("input");
 const form = document.querySelector("form");
 const ul = document.querySelector("ul");
+const alert = document.querySelector(".alert");
+const closeAlert = document.querySelector("#closeAlert");
 
 //função para criar o item da lista
 const createItem = (value) => {
@@ -21,10 +23,18 @@ const createItem = (value) => {
     // Adiciona evento de clique no ícone de exclusão
     divItem.querySelector(".delete-btn").addEventListener("click", () => {
         divItem.remove();
+
+        //remove a classe hide que esta ocultando a notificação de exclusão
+        alert.classList.remove("hide");
     });
 
     return divItem;
 };
+
+//função para quando clickar no X ocultar a notificação de exclusão
+closeAlert.addEventListener("click", () =>{
+    alert.classList.add("hide");
+})
 
 // Evento para adicionar um item na lista
 form.addEventListener("submit", (e) => {

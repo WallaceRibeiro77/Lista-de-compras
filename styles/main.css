@@ -89,3 +89,38 @@ main{
         }
     }
 }
+
+@media (width >= 80em){
+
+    main{
+
+        form{
+            flex-direction: row;
+            gap: 1.6rem;
+    
+            input[type="text"]{
+                width: 45rem;
+            }
+            button{
+                width: 16rem;
+            }
+           
+        }
+
+        .list-wrapper{
+
+            ul{
+                gap: 1.2rem;
+    
+                .item{
+                    width: 100%;
+                }
+            }
+        }
+
+        .alert{
+            width: 100%;
+        }
+
+    }
+}

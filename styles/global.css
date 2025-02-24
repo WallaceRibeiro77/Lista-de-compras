@@ -69,4 +69,11 @@ p{
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
-  }
+}
+
+@media (width >= 80em){
+    .container{
+        width: 62.7rem;
+        margin-inline: auto;
+    }
+}

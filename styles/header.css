@@ -2,3 +2,13 @@ header{
     display: flex;
     justify-content: center;
 }
+
+@media (width >= 80em){
+    header{
+        margin-bottom: 5rem;
+
+        img{
+            height: 5rem;
+        }
+    }
+}
